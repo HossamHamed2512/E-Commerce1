@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    text-align: center;
+    font-size: 12px;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(../Imgs/login.jpg);
+    background-size: cover;
+    background-position: right;
+    overflow: hidden;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #088178;
+}
+
+form {
+    width: min(400px, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    gap: 10px;
+
+}
+
+form>div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form label {
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    background-color: #088178;
+    color: #fff;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+form input {
+    box-sizing: border-box;
+    flex-grow: 1;
+    min-width: 0;
+    padding: 1em;
+    font: inherit;
+    height: 50px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    transition: 150ms ease;
+}
+
+form input:focus {
+    outline: none;
+    border: 2px solid #088178;
+    border-left: none;
+}
+
+form input::placeholder {
+    color: #088178;
+    opacity: 1;
+}
+
+form button {
+    margin-top: 10px;
+    border: none;
+    border-radius: 1000px;
+    padding: .85em 4em;
+    background-color: #088178;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font: inherit;
+    transition: 150ms ease;
+}
+
+form button:hover {
+    color: #000;
+}
+
+p {
+    font-size: 20px;
+}
+
+p a {
+    text-decoration: none;
+    color: #088178;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+
+
+form div.incorrect label {
+    background-color: #f06272;
+}
+
+
+@media (max-width: 1100px) {
+    .wrapper {
+        width: min(600px, 100%);
+        border-radius: 0;
+    }
+
+}
