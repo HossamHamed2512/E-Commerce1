@@ -147,17 +147,20 @@ body {
 #close {
     display: none;
 }
-#login-section{
+
+#login-section {
     display: flex;
     align-items: center;
-    gap: 1rem;
 }
-#login-section a{
-  padding: 15px 40px ;
-  text-decoration: none;
-  background-color: #088178;
-  color: white;
+
+#login-section a {
+    padding: 10px;
+    text-decoration: none;
+    background-color: #088178;
+    color: white;
+    border-radius: 5px;
 }
+
 #user-info-section {
     display: flex;
     align-items: center;
@@ -1038,6 +1041,18 @@ footer .copyright {
 
 /* Media Query */
 @media (max-width:1200px) {
+
+    .navbar a,
+    .header .logo {
+        font-size: 10px;
+
+    }
+
+    #login-section a {
+        padding: 5px;
+        font-size: 10px;
+    }
+
     .features {
         justify-content: center;
     }
@@ -1129,6 +1144,7 @@ footer .copyright {
         display: none;
     }
 
+
     .hero {
         height: 70vh;
         background-position: top 30% right 30%;
@@ -1218,15 +1234,20 @@ footer .copyright {
     .header {
         padding: 10px 30px;
     }
-    .header .logo{
-        font-size: 13px;
+
+    .header .logo {
+        font-size: 10px;
     }
-    #login-section{
-        gap:.5rem;
+
+    #login-section {
+        flex-direction: row;
+        gap: 10px;
     }
-        #login-section a {
-            padding: 5px 10px;
-        }
+
+    #login-section a {
+        padding: 5px;
+        font-size: 10px;
+    }
 
     .hero {
         padding: 0 20px;
@@ -1380,6 +1401,11 @@ footer .copyright {
 
     .subtotal {
         width: 100%;
-
     }
+
+
+
+
+
+
 }
